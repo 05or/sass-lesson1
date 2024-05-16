@@ -6,8 +6,8 @@ $c-black: #333;
 $c-white: #f8f8f8;
 
 //@mixin
-@mixin circle-btn {
-    color: $c-white;
+@mixin circle-btn ($color: $c-white) {
+    color: $color;
     text-decoration: none;
     width: 100px;
     height: 100px;
@@ -19,7 +19,7 @@ $c-white: #f8f8f8;
 
     &:hover {
         border: 4px solid $c-black;
-        background-color: $c-white;
+        background-color: $color;
         color: $c-black;
     }
 }
